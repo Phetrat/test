@@ -1,0 +1,29 @@
+﻿git fetch >> ดูว่าอะไรต่างกันบ้าง
+git merge >> ดึงลงมา
+git pull >> คือ git fetch (+) git merge
+git clone >> คือการดึงข้อมูลลงมาได้เลย 
+git checkout -- (ชื่อไฟล์) >>  คือการแก้ไขไฟล์ให้เป็นอันเดิม
+git checkout --(ชื่อไฟล์) >> คือการ undo ไฟล์นั้นๆ แม้จะปิดไปแล้ว
+git status >> คือการเช็คดูว่ามีไฟล์ไหนบ้าง
+git log >> คือดูว่าเรา commit อะไรไปบ้างแล้ว
+git log --oneline >> จะบอกว่า commit อะไรไปแล้วบ้างแต่จะบอกแค่บรรทัดเดียว
+git commit -m "Edit (ชื่อไฟล์).txt" 
+git rm test.txt >> ลบไฟล์ออกจาก directory
+git reset HEAD test.txt >> นำไฟล์ที่ลบไปเข้ามา
+git checkout test.txt >> แก้ไขไฟล์
+git add .
+git commit -m "your massage"
+git push >> อัพข้อมูลลงเครื่อง
+git stash >> คือการซ่อนข้อมูลที่ต้องการ
+more test.txt ดูว่าข้อควมที่เราซ่อนยังอยู่ไหม
+git stash pop >> ยกเลิกการซ่อนข้อมูล
+
+
+ถ้าเกิด add ข้อมูลไปแล้วจะแก้ไขต้องทำอย่างไร
+git reste HEAD test.txt >> นำไฟล์ที่ add เข้าไป ออกมาก่อนถึงจะใช้คำสั่ง git checkout ได้
+
+ถ้าเรา commit ไปแล้ว แต่อยากได้ไฟล์เก่าต้องทำอย่างไร
+ คือนำไฟล์ commit ออกก่อน โดยใช้คำสั่ง
+git reset --soft "HEAD^"  (discard commit เป็นการเอา commit ล่าสุดออก)
+
+
